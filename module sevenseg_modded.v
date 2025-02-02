@@ -1,5 +1,5 @@
 module sevenseg_modded(
-    input clk,                             //REmember high and low is inverted for ts
+    input clk,                             //Remember high and low is inverted for ts
     input  [3:0] number,                   //an input that is a 4-bit number that denotes whether L,C,R,O is displayed ex) 1000 means L is displayed and the rest are 0
     output reg [6:0] seg = 7'b0101010,     //sets the display to whatever # you want it as
     output reg [3:0] an = 4'b1110          //used to multiplex through each different digit
@@ -40,7 +40,3 @@ module sevenseg_modded(
         endcase
     end
 endmodule
-
-
-left
-seg = 7'b
