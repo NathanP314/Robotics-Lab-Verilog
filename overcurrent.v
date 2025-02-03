@@ -5,7 +5,7 @@ output reg ENA,
 output reg ENB
 );
 
-reg oc_delay = 0; // 1 bit for simulation purposes, used to be 18-bits.
+reg [25:0] oc_delay = 0; // 1 bit for simulation purposes, used to be 18-bits.
 reg oc_test = 0;
 
 always @(posedge clk) begin
