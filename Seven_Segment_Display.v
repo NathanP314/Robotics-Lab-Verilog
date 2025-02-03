@@ -5,7 +5,7 @@ module sevenseg_modded(
     output reg [3:0] an = 4'b1110          //used to multiplex through each different digit
 );
 
-    reg [23:0] counter = 0;
+    reg [1:0] counter = 0;
     reg [3:0] digit = 4'b0000;
 
     always @(posedge clk) begin
